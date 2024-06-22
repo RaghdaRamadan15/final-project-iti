@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>children</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- masseage -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+      }
+
+      .nav {
+        display: flex;
+        align-items: center;
+        background-color: #002147;
+        padding: 15px;
+        font-size: 20px;
+      }
+
+      .nav a {
+        color: white;
+        text-decoration: none;
+        margin-right: 20px;
+      }
+
+      .nav .logo img {
+        height: 40px;
+        margin-right: 20px;
+      }
+
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+      #category-select {
+        background-color: #002147;
+        color: white;
+        border: none;
+        padding: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        margin-right: 20px;
+      }
+
+      #category-select option {
+        color: black;
+      }
+
+      #category-select:hover {
+        text-decoration: none;
+      }
+
+      .nav-right {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+      }
+
+      .nav-right .user-info {
+        display: none;
+        color: white;
+        margin-right: 20px;
+      }
+
+      .nav-right .logout-btn {
+        display: none;
+        background-color: #f44336;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+
+      .nav-right .logout-btn:hover {
+        background-color: #d32f2f;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="nav">
+        <a href="HomeEdit.html">Home</a>
+        <div class="dropdown">
+          <select id="category-select" onchange="location = this.value;">
+            <option value="#" style="background-color: #002147; color: white">
+              Category
+            </option>
+            <option
+              value="men.html"
+              style="background-color: #002147; color: white"
+            >
+              Men
+            </option>
+            <option
+              value="women.html"
+              style="background-color: #002147; color: white"
+            >
+              Women
+            </option>
+            <option
+              value="children.html"
+              style="background-color: #002147; color: white"
+            >
+              Children
+            </option>
+          </select>
+        </div>
+        <a href="AboutEdit.html">About us</a>
+        <a href="contactEdit.html">Contact us</a>
+        <a
+          href="Shopping Cart.html"
+          style="margin-top: 10px; margin-left: 500px"
+        >
+          <img class="A1img" src="Capture.PNG" width="80%" />
+        </a>
+
+        <div class="nav-right">
+          <div class="user-info" id="user-info"></div>
+          <button class="logout-btn" id="logout-btn">Logout</button>
+          <a href="loginEdit.html" id="login-link">Login & Register</a>
+        </div>
+      </div>
+    </header>
+    <div style="margin-top: 100px">
+      <h2>Shop The Best Children's Clothes Here</h2>
+      <section id="section_children"></section>
+    </div>
+    <script src="children.js"></script>
+    <script>
+      setupUI();
+
+      function setupUI() {
+        // Get user token from local storage
+        const token = localStorage.getItem("currentUser");
+
+        // Get login and logout elements
+        const loginBtn = document.getElementById("login-link");
+        const logoutBtn = document.getElementById("logout-btn");
+        const userInfo = document.getElementById("user-info");
+
+        // Check if user is logged in
+        if (token == null) {
+          // Show login and register buttons
+          loginBtn.style.display = "flex";
+          logoutBtn.style.display = "none";
+          userInfo.style.display = "none"; // Hide user info if not logged in
+        } else {
+          // Hide login and register buttons
+          loginBtn.style.display = "none";
+          logoutBtn.style.display = "flex";
+          userInfo.style.display = "flex"; // Show user info if logged in
+
+          // Get current user and display user info
+          const user = getCurrentUser();
+          if (user) {
+            userInfo.innerHTML = `${user.name}`;
+          }
+        }
+      }
+
+      // Function to get current user from local storage
+
+      function getCurrentUser() {
+        let user = null;
+        // Retrieve the user data from local storage
+        const storageUser = localStorage.getItem("currentUser");
+        if (storageUser != null) {
+          user = JSON.parse(storageUser);
+        }
+        return user;
+      }
+
+      // Logout function
+      const logoutBtn = document.getElementById("logout-btn");
+      logoutBtn.addEventListener("click", function () {
+        localStorage.removeItem("currentUser");
+        setupUI();
+      });
+    </script>
+  </body>
+</html>

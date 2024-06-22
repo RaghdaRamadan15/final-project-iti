@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Update Item</title>
+    <link rel="stylesheet" href="admin/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <div class="container" style="margin: 40px; width: 80%">
+      <form action="admin.html" method="post" style="width: 60%; margin: auto">
+        <div class="inputs">
+          <label for="Categoryup">Category</label>
+          <input type="text" id="Categoryup" /><br />
+          <label for="nameup">Name</label>
+          <input type="text" id="nameup" /><br />
+          <label for="priceup">Price</label>
+          <input type="text" id="priceup" /><br />
+          <label for="Descriptionup">Description</label>
+          <input type="text" id="Descriptionup" /><br />
+          <label for="sizeup">Size</label>
+          <input type="text" id="sizeup" /><br />
+          <label for="weighup">Weigh</label>
+          <input type="text" id="weighup" /><br />
+          <label for="colorup">Color</label>
+          <input type="text" id="colorup" /><br />
+          <label for="Tempratureup">Temperature</label>
+          <input type="text" id="Tempratureup" /><br /><br />
+          <button type="button" id="submit">Update</button>
+        </div>
+      </form>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        try {
+          // استرجاع البيانات من localStorage
+          const updatable = JSON.parse(localStorage.getItem("editData"));
+          const tableId = localStorage.getItem("editTableId");
+          const index = parseInt(localStorage.getItem("editIndex"));
+          const index2 = parseInt(localStorage.getItem("editIndex2"));
+
+          // التحقق من وجود البيانات
+          if (updatable && tableId && !isNaN(index) && !isNaN(index2)) {
+            // إعداد الحقول في صفحة التحديث
+            document.getElementById("nameup").value = updatable.Name || "";
+            document.getElementById("Tempratureup").value =
+              updatable.temperature || "";
+            document.getElementById("Descriptionup").value =
+              updatable.Description || "";
+            document.getElementById("Categoryup").value =
+              updatable.Category || "";
+            document.getElementById("colorup").value = updatable.color || "";
+            document.getElementById("priceup").value = updatable.price || "";
+            document.getElementById("sizeup").value = updatable.size || "";
+            document.getElementById("weighup").value = updatable.weigh || "";
+
+            // تحديث البيانات عند النقر على زر "Update"
+            document.getElementById("submit").onclick = function () {
+              const updatedName = document.getElementById("nameup").value;
+              const updatedCategory =
+                document.getElementById("Categoryup").value;
+              const updatedTemperature =
+                document.getElementById("Tempratureup").value;
+              const updatedPrice = document.getElementById("priceup").value;
+              const updatedColor = document.getElementById("colorup").value;
+              const updatedSize = document.getElementById("sizeup").value;
+              const updatedWeigh = document.getElementById("weighup").value;
+              const updatedDescription =
+                document.getElementById("Descriptionup").value;
+
+              let data;
+              let localStorageKey;
+
+              if (tableId === "#men tbody") {
+                data = JSON.parse(localStorage.getItem("itemsMen")) || [];
+                localStorageKey = "itemsMen";
+              } else if (tableId === "#children tbody") {
+                data = JSON.parse(localStorage.getItem("itemChildern")) || [];
+                localStorageKey = "itemChildern";
+              } else if (tableId === "#women tbody") {
+                data = JSON.parse(localStorage.getItem("itemwomen")) || [];
+                localStorageKey = "itemwomen";
+              }
+
+              // التأكد من وجود البيانات والفهارس الصحيحة
+              if (data && data[index] && data[index][index2]) {
+                let imag = data[index][index2].imag;
+                // تحديث البيانات في المصفوفة
+                data[index][index2].Name = updatedName;
+                data[index][index2].Category = updatedCategory;
+                data[index][index2].temperature = updatedTemperature;
+                data[index][index2].price = updatedPrice;
+                data[index][index2].color = updatedColor;
+                data[index][index2].size = updatedSize;
+                data[index][index2].weigh = updatedWeigh;
+                data[index][index2].Description = updatedDescription;
+                data[index][index2].imag = imag;
+
+                Swal.fire({
+                  icon: "success",
+                  title: "The product has been  Update successfully",
+                  background: "rgb(146, 218, 104)",
+                  showConfirmButton: false,
+                  timer: 3000,
+                  titleColor: "#ffffff",
+                  iconColor: "#5cb85c",
+                });
+                // حفظ البيانات المحدثة في localStorage
+                localStorage.setItem(localStorageKey, JSON.stringify(data));
+
+                // إعادة التوجيه إلى الصفحة الرئيسية أو أي صفحة أخرى
+                window.location.href = "admin.html";
+              } else {
+                console.error("Data not found or indices are invalid.");
+              }
+            };
+          } else {
+            console.error("Data not found or indices are invalid.");
+          }
+        } catch (error) {
+          console.error("Error fetching or parsing data:", error);
+        }
+      });
+    </script>
+  </body>
+</html>

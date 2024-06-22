@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <style>
+      body {
+        position: relative;
+        padding-top: 50px;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        /* background-image: url('qo.jpg');
+            background-size: contain; */
+      }
+
+      .container {
+        /* background-image: url('work.jpeg'); */
+        position: absolute;
+        top: 30px;
+
+        background-color: rgb(250, 255, 255);
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 400px;
+        /* padding-bottom: 20px; */
+      }
+
+      .contact-form h2 {
+        font-style: italic;
+
+        text-align: center;
+        /* padding-top: 100px;
+            margin-bottom: 80px; */
+        color: black;
+      }
+
+      .contact-form label {
+        display: block;
+        margin-bottom: 5px;
+        color: black;
+      }
+
+      .contact-form input[type="text"],
+      .contact-form input[type="email"],
+      .contact-form input[type="password"],
+      .contact-form input[type="tel"],
+      .contact-form input[type="date"] {
+        width: 100%;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        border: 1px solid black;
+        border-radius: 4px;
+      }
+
+      .contact-form .gender-options {
+        display: flex;
+        float: left;
+        margin-bottom: 10px;
+      }
+
+      .contact-form .gender-options input[type="radio"] {
+        margin-right: 10px;
+      }
+
+      .contact-form .gender-options label {
+        margin-right: 20px;
+        color: black;
+      }
+
+      .contact-form button {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        color: white;
+        background-color: #5cb85c;
+        cursor: pointer;
+        font-size: 20px;
+      }
+
+      .contact-form button[type="button"] {
+        background-color: #0275d8;
+        margin-top: 10px;
+      }
+
+      .contact-form button[type="button"]:hover {
+        background-color: #025aa5;
+      }
+
+      .createnewacc {
+        background-color: #007bff;
+        position: relative;
+        top: 10px;
+        border-radius: 6px;
+        height: 40px;
+      }
+
+      .createnewacc a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        position: relative;
+        left: 140px;
+        top: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <form id="formbox" class="contact-form">
+        <h2>Registration</h2>
+        <label for="first-name">First Name</label>
+        <input
+          type="text"
+          id="first-name"
+          name="first-name"
+          placeholder="Your first name"
+          title="Invalid Name"
+          pattern="\b[a-zA-Z]{3,}\b"
+          required
+        />
+
+        <label for="last-name">Last Name</label>
+        <input
+          type="text"
+          id="last-name"
+          name="last-name"
+          title="Invalid Name"
+          placeholder="Your last name"
+          pattern="\b[a-zA-Z]{3,}\b"
+          required
+        />
+
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="your email address"
+          pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$
+            "
+          required
+        />
+
+        <label for="password">New Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+          title="Must contain at least one number, one uppercase and lowercase letter, and at least 8 or more characters"
+          placeholder=" your password"
+          required
+        />
+
+        <label for="confirm-password">Confirm Password</label>
+        <input
+          type="password"
+          id="confirm-password"
+          name="confirm-password"
+          placeholder="confirm-password"
+          required
+        />
+        <div
+          id="confirmPasswordError"
+          style="display: none; width: 100%; font-size: small; color: red"
+        >
+          Passwords do not match!
+        </div>
+
+        <label for="phone">Phone Number</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          pattern="^01[0-2,5]{1}[0-9]{8}$"
+          title="Invalid Phone Number"
+          placeholder="your mobile phone"
+          required
+        />
+
+        <label for="birthdate">Birthdate</label>
+        <input type="date" id="birthdate" name="birthdate" />
+
+        <label>Choose your gender:</label>
+        <div class="gender-options">
+          <input type="radio" id="male" name="gender" value="male" required />
+          <label for="male">Male</label>
+          <input
+            type="radio"
+            id="female"
+            name="gender"
+            value="female"
+            required
+          />
+          <label for="female">Female</label>
+        </div>
+
+        <button id="send" type="submit">Submit</button>
+        <div class="createnewacc">
+          <a href="HomeEdit.html">Go To Home</a>
+        </div>
+      </form>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const registrationForm = document.getElementById("formbox");
+
+        registrationForm.addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          const regEmail = document.getElementById("email").value;
+          const regPassword = document.getElementById("password").value;
+          const regName = document.getElementById("first-name").value;
+          const x = "RaghdaRamadan@gmail.com";
+          const y = "Aa@12345";
+
+          let users = JSON.parse(localStorage.getItem("users")) || [];
+          users.push({ email: regEmail, password: regPassword, name: regName });
+          localStorage.setItem("users", JSON.stringify(users));
+
+          window.open("loginEdit.html");
+        });
+      });
+
+      document
+        .getElementById("send")
+        .addEventListener("click", function (event) {
+          var password = document.getElementById("password").value;
+          var confirmPassword =
+            document.getElementById("confirm-password").value;
+          var confirmPasswordError = document.getElementById(
+            "confirmPasswordError"
+          );
+
+          if (password !== confirmPassword) {
+            confirmPasswordError.style.display = "block";
+            event.preventDefault();
+          } else {
+            confirmPasswordError.style.display = "none";
+          }
+        });
+    </script>
+  </body>
+</html>

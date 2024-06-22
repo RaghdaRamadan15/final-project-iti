@@ -1,0 +1,328 @@
+{
+  "sectionMen": [
+    [
+      {
+        "imag": "images/79b5126f808157a8f2c846b7c1730a1e.jpg",
+        "price": "200$",
+        "ID": 1,
+        "Name": "T-shirt",
+        "Category": "Men",
+        "Description": "made in Egypt",
+
+        "color": ["black", "white", "buge"],
+        "size": ["l", "m", "s", "xl"],
+        "weigh": "20g",
+        "temperature": "spring"
+      },
+      {
+        "imag": "images/1b6cd40ad9212db947918c17e09c175d.jpg",
+        "price": "400$",
+        "ID": 2,
+        "Name": "T-shirt",
+        "Category": "Men",
+        "Description": "made in Egypt",
+
+        "color": ["blue"],
+        "size": ["l", "m", "s", "xl"],
+        "weigh": "10g",
+        "temperature": "spring"
+      },
+      {
+        "imag": "images/7d4c2c8bb88b2072e4577b869b924d89.jpg",
+        "price": "600$",
+        "ID": 3,
+        "Name": "T-shirt",
+        "Category": "Men",
+        "Description": "made in Egypt",
+
+        "color": ["blue", "white"],
+        "size": ["l", "m", "s", "xl"],
+        "weigh": "30g",
+        "temperature": "spring"
+      },
+      {
+        "imag": "images/2c484950845611224f62514bc2c5a554.jpg",
+        "price": "400$",
+        "ID": 4,
+        "Name": "T-shirt",
+        "Category": "Men",
+        "Description": "made in Egypt",
+
+        "color": ["black", "white"],
+        "size": ["l", "m", "s", "xl"],
+        "weigh": "250g",
+        "temperature": "fall"
+      }
+    ],
+    [
+      {
+        "imag": "images/9cf95aaa5e5657d83ad080d6783fc9c4.jpg",
+        "price": "1000$",
+        "ID": 5,
+        "Name": "sport T-shirt",
+        "Category": "Men",
+        "Description": "made in london",
+
+        "color": ["blue", "white"],
+        "size": ["l", "m", "s", "xl"],
+        "weigh": "10g",
+        "temperature": "fall"
+      },
+      {
+        "imag": "images/48c1e837b6030fb5244516616ddc8913.jpg",
+        "price": "250$",
+        "ID": 6,
+        "Name": "sport T-shirt",
+        "Category": "Men",
+        "Description": "made in london",
+
+        "color": ["beige", "white"],
+        "size": ["l", "m", "s", "xl"],
+        "weigh": "15g",
+        "temperature": "spring"
+      },
+      {
+        "imag": "images/53a350b0cee8b35d0acd1c49a4326f4f.jpg",
+        "price": "500$",
+        "ID": 7,
+        "Name": "Sweat T-shirt",
+        "Category": "Men",
+        "Description": "made in Egypt",
+
+        "color": ["blue", "white"],
+        "size": ["l", "m", "s", "xl"],
+        "weigh": "20g",
+        "temperature": "spring"
+      },
+      {
+        "imag": "images/fc589a34dd29448e15cb92b79ec00efd.jpg",
+        "price": "400$",
+        "ID": 8,
+        "Name": "Sweat Shirt",
+        "Category": "Men",
+        "Description": "made in Egypt",
+
+        "color": ["black", "white", "red"],
+        "size": ["l", "m", "s", "xl"],
+        "weigh": "40g",
+        "temperature": "fall"
+      }
+    ],
+    [
+      {
+        "imag": "images/76b9be35e24760ea2eea6171bbd2ef6a.jpg",
+        "price": "300$",
+        "ID": 9,
+        "Name": "T-shirt",
+        "Category": "Men",
+        "Description": "made in Egypt",
+
+        "color": ["gren", "black"],
+        "size": ["l", "m", "s", "xl"],
+        "weigh": "10g",
+        "temperature": "spring"
+      },
+      {
+        "imag": "images/0d1bd71215e8d03f90b927168d41d9f2.jpg",
+        "price": "800$",
+        "ID": 10,
+        "Name": "T-shirt",
+        "Category": "Men",
+        "Description": "made in Egypt",
+
+        "color": ["black", "white"],
+        "size": ["l", "m", "s", "xl"],
+        "weigh": "25g",
+        "temperature": "fall"
+      },
+      {
+        "imag": "images/82ed2c315e05f808c048ee793daa7e64.jpg",
+        "price": "700$",
+        "ID": 11,
+        "Name": "shirt",
+        "Category": "Men",
+        "Description": "made in Egypt",
+
+        "color": ["black", "white"],
+        "size": ["l", "m", "s", "xl"],
+        "weigh": "20g",
+        "temperature": "fall"
+      },
+      {
+        "imag": "images/7285296ed2a460cbc8577a363cbbace6.jpg",
+        "price": "200$",
+        "ID": 12,
+        "Name": "Sweat Shirt",
+        "Category": "Men",
+        "Description": "made in Egypt",
+
+        "color": ["orange", "white"],
+        "size": ["l", "m", "s", "xl"],
+        "weigh": "20g",
+        "temperature": "spring"
+      }
+    ],
+    [
+      {
+        "imag": "images/a5e18d03cfc7a2224d3294f1ebb5330d.jpg",
+        "price": "700$",
+        "ID": 13,
+        "Name": "T-shirt",
+        "Category": "Men",
+        "Description": "made in Egypt",
+
+        "color": ["gren", "beige"],
+        "size": ["l", "m", "s", "xl"],
+        "weigh": "10g",
+        "temperature": "spring"
+      },
+      {
+        "imag": "images/a3212d9adaaada45767eb1e7a9462fa4.jpg",
+        "price": "800$",
+        "ID": 14,
+        "Name": "Sweat Shirt",
+        "Category": "Men",
+        "Description": "made in Egypt",
+
+        "color": ["black", "white"],
+        "size": ["l", "m", "s", "xl"],
+        "weigh": "25g",
+        "temperature": "fall"
+      },
+      {
+        "imag": "images/ae13a8e5b17b182db3245dd7b4db1112.jpg",
+        "price": "900$",
+        "ID": 15,
+        "Name": "Sweat T-shirt",
+        "Category": "Men",
+        "Description": "made in Egypt",
+
+        "color": ["green", "white"],
+        "size": ["l", "m", "s", "xl"],
+        "weigh": "50g",
+        "temperature": "fall"
+      },
+      {
+        "imag": "images/b40712c907d784a5ecd8e2c52fcede95.jpg",
+        "price": "1200$",
+        "ID": 16,
+        "Name": "Shirt",
+        "Category": "Men",
+        "Description": "made in Egypt",
+
+        "color": ["gray", "white"],
+        "size": ["l", "m", "s", "xl"],
+        "weigh": "30g",
+        "temperature": "spring"
+      }
+    ],
+    [
+      {
+        "imag": "images/c73da3ce2b7ecc83bab50a2ed22784f5.jpg",
+        "price": "700$",
+        "ID": 17,
+        "Name": "T-shirt",
+        "Category": "Men",
+        "Description": "made in Egypt",
+
+        "color": ["pink", "beige"],
+        "size": ["l", "m", "s", "xl"],
+        "weigh": "20g",
+        "temperature": "spring"
+      },
+      {
+        "imag": "images/82ed2c315e05f808c048ee793daa7e64.jpg",
+        "price": "800$",
+        "ID": 18,
+        "Name": "T-Shirt",
+        "Category": "Men",
+        "Description": "made in Egypt",
+
+        "color": ["black", "blue"],
+        "size": ["l", "m", "s", "xl"],
+        "weigh": "25g",
+        "temperature": "spring"
+      },
+      {
+        "imag": "images/f754cbec7e626b10098163298a914d7f.jpg",
+        "price": "500$",
+        "ID": 19,
+        "Name": "Sweat T-shirt",
+        "Category": "Men",
+        "Description": "made in Egypt",
+
+        "color": ["black", "white"],
+        "size": ["l", "m", "s", "xl"],
+        "weigh": "10g",
+        "temperature": "spring"
+      },
+      {
+        "imag": "images/63df63bd64c8a411f5d71f6a354b4bc2.jpg",
+        "price": "800$",
+        "ID": 20,
+        "Name": " Shirt",
+        "Category": "Men",
+        "Description": "made in Egypt",
+
+        "color": ["brown", "white"],
+        "size": ["l", "m", "s", "xl"],
+        "weigh": "40g",
+        "temperature": "spring"
+      }
+    ],
+    [
+      {
+        "imag": "images/b2.jpg",
+        "price": "700$",
+        "ID": 21,
+        "Name": "bantolon",
+        "Category": "Men",
+        "Description": "made in Egypt",
+
+        "color": ["pink", "beige"],
+        "size": ["l", "m", "s", "xl"],
+        "weigh": "20g",
+        "temperature": "spring"
+      },
+      {
+        "imag": "images/b4.jpg",
+        "price": "700$",
+        "ID": 22,
+        "Name": "bantolon",
+        "Category": "Men",
+        "Description": "made in Egypt",
+
+        "color": ["black", "blue"],
+        "size": ["l", "m", "s", "xl"],
+        "weigh": "25g",
+        "temperature": "spring"
+      },
+      {
+        "imag": "images/b5.jpg",
+        "price": "600$",
+        "ID": 23,
+        "Name": "bantolon",
+        "Category": "Men",
+        "Description": "made in Egypt",
+
+        "color": ["black", "white"],
+        "size": ["l", "m", "s", "xl"],
+        "weigh": "10g",
+        "temperature": "spring"
+      },
+      {
+        "imag": "images/b47.jpg",
+        "price": "800$",
+        "ID": 24,
+        "Name": " bantolon",
+        "Category": "Men",
+        "Description": "made in Egypt",
+
+        "color": ["brown", "white"],
+        "size": ["l", "m", "s", "xl"],
+        "weigh": "40g",
+        "temperature": "spring"
+      }
+    ]
+  ]
+}

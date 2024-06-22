@@ -1,0 +1,274 @@
+{
+  "womensection": [
+    [
+      {
+        "imag": "imgs/women_imgs/8f0df51884cf96826891732e4db43988.jpg",
+        "price": "200$",
+        "ID": 25,
+        "Name": "Dress",
+        "Category": "women",
+        "Description": "made in Egypt",
+
+        "color": "blue, orange",
+        "size": "l, m, s, xl",
+        "weigh": "40g",
+        "temperature": "spring"
+      },
+      {
+        "imag": "imgs/women_imgs/75b237904d124962adcbcb1b8e5ab9a7.jpg",
+        "price": "400$",
+        "ID": 26,
+        "Name": "Derss",
+        "Category": "women",
+        "Description": "made in Egypt",
+
+        "color": "black, Grey, buge",
+        "size": "l, m, s, xl",
+        "weigh": "80g",
+        "temperature": "spring"
+      },
+      {
+        "imag": "imgs/women_imgs/337ef692c1335db1758bb1292da57b31.jpg",
+        "price": "500$",
+        "ID": 27,
+        "Name": "Derss",
+        "Category": "women",
+        "Description": "made in Egypt",
+
+        "color": "Green, white, blue, red",
+        "size": "l, m, s, xl",
+        "weigh": "60g",
+        "temperature": "fall"
+      },
+      {
+        "imag": "imgs/women_imgs/72655952458b7cc6672892b7092bdeea.jpg",
+        "price": "300$",
+        "ID": 28,
+        "Name": "Mini Derss",
+        "Category": "women",
+        "Description": "made in Egypt",
+
+        "color": "black, brown, buge",
+        "size": "l, m, s, xl",
+        "weigh": "90g",
+        "temperature": "fall"
+      }
+    ],
+    [
+      {
+        "imag": "imgs/women_imgs/5.jpg",
+        "price": "450$",
+        "ID": 29,
+        "Name": "Derss",
+        "Category": "women",
+        "Description": "made in Egypt",
+
+        "color": "black, brown, buge,Green",
+        "size": "l, m, s, xl",
+        "weigh": "90g",
+        "temperature": "fall"
+      },
+      {
+        "imag": "imgs/women_imgs/c823da337574a51921d6494dffd570f4.jpg",
+        "price": "250$",
+        "ID": 30,
+        "Name": "Derss",
+        "Category": "women",
+        "Description": "made in Egypt",
+
+        "color": "black, brown, buge, green",
+        "size": "l, m, s, xl",
+        "weigh": "50g",
+        "temperature": "spring"
+      },
+      {
+        "imag": "imgs/women_imgs/7.jpeg",
+        "price": "4500$",
+        "ID": 31,
+        "Name": "Derss",
+        "Category": "women",
+        "Description": "made in Egypt",
+
+        "color": "black, brown, buge",
+        "size": "l, m, s, xl",
+        "weigh": "40g",
+        "temperature": "spring"
+      },
+      {
+        "imag": "imgs/women_imgs/261416fc78c1719a3f74e068fa080c8d.jpg",
+        "price": "100$",
+        "ID": 32,
+        "Name": "Derss",
+        "Category": "women",
+        "Description": "made in Egypt",
+
+        "color": "black, brown, buge",
+        "size": "l, m, s, xl",
+        "weigh": "60g",
+        "temperature": "fall"
+      }
+    ],
+    [
+      {
+        "imag": "imgs/women_imgs/e003e81f29638a16db757a5e86917937.jpg",
+        "price": "550$",
+        "ID": 33,
+        "Name": "Derss",
+        "Category": "women",
+        "Description": "made in Egypt",
+
+        "color": "Green, white, blue, red",
+        "size": "l, m, s, xl",
+        "weigh": "90g",
+        "temperature": "spring"
+      },
+      {
+        "imag": "imgs/women_imgs/e81e696c9eac91f582d24c5d15de1074.jpg",
+        "price": "300$",
+        "ID": 34,
+        "Name": "Derss",
+        "Category": "women",
+        "Description": "made in Egypt",
+
+        "color": "blue, orange",
+        "size": "l, m, s, xl",
+        "weigh": "60g",
+        "temperature": "spring"
+      },
+      {
+        "imag": "imgs/women_imgs/af029eed95a6b33100aa449cc5e560fc.jpg",
+        "price": "800$",
+        "ID": 35,
+        "Name": "pants",
+        "Category": "women",
+        "Description": "made in Egypt",
+
+        "color": "black, brown, buge,Green",
+        "size": "l, m, s, xl",
+        "weigh": "40g",
+        "temperature": "spring"
+      },
+      {
+        "imag": "imgs/women_imgs/b75f87ea2011b138bd615f4d286fbe05.jpg",
+        "price": "700$",
+        "ID": 36,
+        "Name": "skirt",
+        "Category": "women",
+        "Description": "made in Egypt",
+
+        "color": "purple, blue, buge",
+        "size": "l, m, s, xl",
+        "weigh": "15g",
+        "temperature": "fall"
+      }
+    ],
+    [
+      {
+        "imag": "imgs/women_imgs/a40d14eec6d63881569d7c4d6e79efc8.jpg",
+        "price": "600$",
+        "ID": 37,
+        "Name": "skirt",
+        "Category": "women",
+        "Description": "made in Egypt",
+
+        "color": "black, brown, buge,Green",
+        "size": "l, m, s, xl",
+        "weigh": "10g",
+        "temperature": "fall"
+      },
+      {
+        "imag": "imgs/women_imgs/5f7c8df7f75da93ceab3f62fee8a9851.jpg",
+        "price": "200$",
+        "ID": 38,
+        "Name": "shirt",
+        "Category": "women",
+        "Description": "made in Egypt",
+
+        "color": "black, brown, buge,Green",
+        "size": "l, m, s, xl",
+        "weigh": "15g",
+        "temperature": "fall"
+      },
+      {
+        "imag": "imgs/women_imgs/01d1366094d75a724aa5761539a441da.jpg",
+        "price": "100$",
+        "ID": 39,
+        "Name": "blouse",
+        "Category": "women",
+        "Description": "made in Egypt",
+
+        "color": "blue, orange",
+        "size": "l, m, s, xl",
+        "weigh": "30g",
+        "temperature": "spring"
+      },
+      {
+        "imag": "imgs/women_imgs/05ae0df079d8512cb97bfca88b723a51.jpg",
+        "price": "200$",
+        "ID": 40,
+        "Name": "blouse",
+        "Category": "women",
+        "Description": "made in Egypt",
+
+        "color": "black, Grey, buge",
+        "size": "l, m, s, xl",
+        "weigh": "60g",
+        "temperature": "fall"
+      }
+    ],
+    [
+      {
+        "imag": "imgs/women_imgs/fb339df6a2ceda08bebe94a52463ff44.jpg",
+        "price": "200$",
+        "ID": 41,
+        "Name": "T-shirt",
+        "Category": "women",
+        "Description": "made in Egypt",
+
+        "color": "Green, white, blue, red",
+        "size": "l, m, s, xl",
+        "weigh": "70g",
+        "temperature": "fall"
+      },
+      {
+        "imag": "imgs/women_imgs/8b.jpeg",
+        "price": "500$",
+        "ID": 42,
+        "Name": "blouse",
+        "Category": "women",
+        "Description": "made in Egypt",
+
+        "color": "blue, orange",
+        "size": "l, m, s, xl",
+        "weigh": "90g",
+        "temperature": "fall"
+      },
+      {
+        "imag": "imgs/women_imgs/a9aa1bc4fb5c2695bc75ee5b596facb5.jpg",
+        "price": "200$",
+        "ID": 43,
+        "Name": "blouse",
+        "Category": "women",
+        "Description": "made in Egypt",
+
+        "color": "black, Grey, buge",
+        "size": "l, m, s, xl",
+        "weigh": "30g",
+        "temperature": "spring"
+      },
+      {
+        "imag": "imgs/women_imgs/1c12cc0b17a863355f6bd0a453bd525d.jpg",
+        "price": "600$",
+        "ID": 44,
+        "Name": "sweat shirt",
+        "Category": "women",
+        "Description": "made in Egypt",
+
+        "color": "black, brown, buge,Green",
+        "size": "l, m, s, xl",
+        "weigh": "90g",
+        "temperature": "fall"
+      }
+    ]
+  ]
+}

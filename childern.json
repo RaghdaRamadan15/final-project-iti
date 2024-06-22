@@ -1,0 +1,220 @@
+{
+  "childern_section": [
+    [
+      {
+        "imag": "imgs/children_imgs/3ed02560d95f25d706f874055c0b76ef.jpg",
+        "price": "900$",
+        "ID": 45,
+        "Name": "Cote",
+        "Category": "childern",
+        "Description": "made in Egypt",
+
+        "color": ["blue", "orange"],
+        "size": ["l", "m", "s", "xl"],
+        "weigh": "70g",
+        "temperature": "Winter"
+      },
+      {
+        "imag": "imgs/children_imgs/95efdc4d31175840e0aad74d7c67da39.jpg",
+        "price": "400$",
+        "ID": 46,
+        "Name": "Jeans jacket",
+        "Category": "Boy",
+        "Description": "made in Egypt",
+
+        "color": ["black", "Grey", "baby blue"],
+        "size": ["l", "m", "s", "xl"],
+        "weigh": "80g",
+        "temperature": "fall"
+      },
+      {
+        "imag": "imgs/children_imgs/64f2f0634a5ea57cf61d80fbff2f0f9a.jpg",
+        "price": "500$",
+        "ID": 47,
+        "Name": "Derss",
+        "Category": "childern",
+        "Description": "made in Egypt",
+
+        "color": ["black", "white", "blue", "red"],
+        "size": ["l", "m", "s", "xl"],
+        "weigh": "60g",
+        "temperature": "spring"
+      },
+      {
+        "imag": "imgs/children_imgs/14bcc86b419851763034eddf95986bf7.jpg",
+        "price": "900$",
+        "ID": 48,
+        "Name": "Baby overalls",
+        "Category": "childern",
+        "Description": "made in Egypt",
+
+        "color": ["black", "brown", "buge"],
+        "size": ["l", "m", "s", "xl"],
+        "weigh": "90g",
+        "temperature": "fall"
+      }
+    ],
+    [
+      {
+        "imag": "imgs/children_imgs/eed0bee3b53ca83abde054ba939bd115.jpg",
+        "price": "450$",
+        "ID": 49,
+        "Name": "Jumpsuit",
+        "Category": "childern",
+        "Description": "made in Egypt",
+
+        "color": ["black", "pink", "buge", "Green"],
+        "size": ["l", "m", "s", "xl"],
+        "weigh": "40g",
+        "temperature": "spring"
+      },
+      {
+        "imag": "imgs/children_imgs/b46936b1388775aef91015da14aa630b.jpg",
+        "price": "450$",
+        "ID": 50,
+        "Name": "Suit",
+        "Category": "childern",
+        "Description": "made in Egypt",
+
+        "color": ["black", "white", "buge"],
+        "size": ["l", "m", "s", "xl"],
+        "weigh": "50g",
+        "temperature": "spring"
+      },
+      {
+        "imag": "imgs/children_imgs/cb3faf7f3cd737d7942054731a18ede5.jpg",
+        "price": "450$",
+        "ID": 51,
+        "Name": "Derss",
+        "Category": "childern",
+        "Description": "made in Egypt",
+
+        "color": ["black", "white", "brown"],
+        "size": ["l", "m", "s", "xl"],
+        "weigh": "70g",
+        "temperature": "spring"
+      },
+      {
+        "imag": "imgs/children_imgs/f5a0dae635193d054feed86f0244147e.jpg",
+        "price": "150$",
+        "ID": 52,
+        "Name": "blouse",
+        "Category": "childern",
+        "Description": "made in Egypt",
+
+        "color": ["black", "Green", "buge"],
+        "size": ["l", "m", "s", "xl"],
+        "weigh": "40g",
+        "temperature": "fall"
+      }
+    ],
+    [
+      {
+        "imag": "imgs/children_imgs/b92e607763158a8100ebde4b5fed9515.jpg",
+        "price": "550$",
+        "ID": 53,
+        "Name": "Jeans pants",
+        "Category": "childern",
+        "Description": "made in Egypt",
+
+        "color": ["yellow", "white", "buge"],
+        "size": ["l", "m", "s", "xl"],
+        "weigh": "50g",
+        "temperature": "spring"
+      },
+      {
+        "imag": "imgs/children_imgs/e34d6f8e641968e9f01bf065858173c8.jpg",
+        "price": "300$",
+        "ID": 54,
+        "Name": "skirt",
+        "Category": "childern",
+        "Description": "made in Egypt",
+
+        "color": ["black", "yellow"],
+        "size": ["l", "m", "s", "xl"],
+        "weigh": "20g",
+        "temperature": "spring"
+      },
+      {
+        "imag": "imgs/children_imgs/ed00171ab1f5fdbc05cf055088113a80.jpg",
+        "price": "800$",
+        "ID": 55,
+        "Name": "Cote",
+        "Category": "childern",
+        "Description": "made in Egypt",
+
+        "color": ["black", "white", "buge"],
+        "size": ["l", "m", "s", "xl"],
+        "weigh": "50g",
+        "temperature": "Winter"
+      },
+      {
+        "imag": "imgs/children_imgs/e95a07f708af78767e8681f5bd021799.jpg",
+        "price": "700$",
+        "ID": 56,
+        "Name": "Suit",
+        "Category": "childern",
+        "Description": "made in Egypt",
+
+        "color": ["purple", "blue", "buge"],
+        "size": ["l", "m", "s", "xl"],
+        "weigh": "20g",
+        "temperature": "spring"
+      }
+    ],
+    [
+      {
+        "imag": "imgs/children_imgs/ed7161ee23a2ef7fbede509203496a72.jpg",
+        "price": "600$",
+        "ID": 57,
+        "Name": "shirt and shorts",
+        "Category": "childern",
+        "Description": "made in Egypt",
+
+        "color": ["buge", "white", "brown"],
+        "size": ["l", "m", "s", "xl"],
+        "weigh": "40g",
+        "temperature": "spring"
+      },
+      {
+        "imag": "imgs/children_imgs/732d1e8cafa4cd79f37ab565e1d36017.jpg",
+        "price": "200$",
+        "ID": 58,
+        "Name": "Jumpsuit",
+        "Category": "childern",
+        "Description": "made in Egypt",
+
+        "color": ["black", "brown", "buge"],
+        "size": ["l", "m", "s", "xl"],
+        "weigh": "25g",
+        "temperature": "fall"
+      },
+      {
+        "imag": "imgs/children_imgs/753a9a1cd7de61684a5fa504016ffc49.jpg",
+        "price": "100$",
+        "ID": 59,
+        "Name": "blouse",
+        "Category": "childern",
+        "Description": "made in Egypt",
+
+        "color": ["black", "white", "buge", "orange"],
+        "size": ["l", "m", "s", "xl"],
+        "weigh": "30g",
+        "temperature": "spring"
+      },
+      {
+        "imag": "imgs/children_imgs/f2e658f892c45d524aee87447c57c42f.jpg",
+        "price": "200$",
+        "ID": 60,
+        "Name": "Derss",
+        "Category": "childern",
+        "Description": "made in Egypt",
+
+        "color": ["blue", "white", "buge"],
+        "size": ["l", "m", "s", "xl"],
+        "weigh": "60g",
+        "temperature": "fall"
+      }
+    ]
+  ]
+}

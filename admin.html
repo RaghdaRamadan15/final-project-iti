@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="admin/style.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .navbar {
+        background-color: #333;
+        overflow: hidden;
+      }
+
+      .nav-list {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+      }
+
+      .nav-item {
+        padding: 14px 20px;
+      }
+
+      .nav-item a {
+        text-decoration: none;
+        color: white;
+        display: block;
+      }
+
+      .nav-item a:hover {
+        background-color: #575757;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="HomeEdit.html">home</a></li>
+        <li class="nav-item"><a href="addproduct.html">Add product</a></li>
+        <li class="nav-item"><a href="order.html">Order</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <div class="outputs">
+        <table
+          id="men"
+          style="border: 2px solid black; margin: 10px; width: 95%"
+        >
+          <thead>
+            <tr>
+              <th>product</th>
+              <th>ID</th>
+              <th>Category</th>
+              <th>Name</th>
+              <th>price</th>
+              <th>Description</th>
+              <th>Color</th>
+              <th>size</th>
+              <th>weigh</th>
+              <th>Temprature</th>
+              <th>Update</th>
+              <th>Delete</th>
+            </tr>
+          </thead>
+          <tbody class="cmen"></tbody>
+        </table>
+        <br />
+        <table
+          id="childern"
+          style="border: 2px solid black; position: relative; left: 0%"
+        >
+          <thead>
+            <tr>
+              <th>product</th>
+              <th>ID</th>
+              <th>Category</th>
+              <th>Name</th>
+              <th>price</th>
+              <th>Description</th>
+              <th>Color</th>
+              <th>size</th>
+              <th>weigh</th>
+              <th>Temprature</th>
+              <th>Update</th>
+              <th>Delete</th>
+            </tr>
+          </thead>
+          <tbody class="cchildern"></tbody>
+        </table>
+        <br />
+        <table
+          id="women"
+          style="border: 2px solid black; position: relative; left: 0%"
+        >
+          <thead>
+            <tr>
+              <th>product</th>
+              <th>ID</th>
+              <th>Category</th>
+              <th>Name</th>
+              <th>price</th>
+              <th>Description</th>
+              <th>Color</th>
+              <th>size</th>
+              <th>weigh</th>
+              <th>Temprature</th>
+              <th>Update</th>
+              <th>Delete</th>
+            </tr>
+          </thead>
+          <tbody class="cwomen"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="admin.js"></script>
+  </body>
+</html>

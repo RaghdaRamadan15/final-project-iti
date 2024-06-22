@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order</title>
+    <link rel="stylesheet" href="admin\style.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .navbar {
+        background-color: #333;
+        overflow: hidden;
+      }
+
+      .nav-list {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+      }
+
+      .nav-item {
+        padding: 14px 20px;
+      }
+
+      .nav-item a {
+        text-decoration: none;
+        color: white;
+        display: block;
+      }
+
+      .nav-item a:hover {
+        background-color: #575757;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="admin.html">home</a></li>
+        <li class="nav-item"><a href="addproduct.html">add product</a></li>
+      </ul>
+    </nav>
+
+    <table id="toble_data" class="table-shopping">
+      <thead>
+        <tr>
+          <th>Products</th>
+          <th>price</th>
+          <th>Quantity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Rows will be added here dynamically -->
+      </tbody>
+    </table>
+
+    <script>
+      let tabledata;
+      let shoppingFeas = 10;
+      function getdatastore() {
+        tabledata = JSON.parse(localStorage.getItem("allorder")) || [];
+      }
+      getdatastore();
+      showdata();
+      function showdata() {
+        // document.addEventListener("DOMContentLoaded", function () {
+        // الحصول على tbody العنصر
+        const tableBody = document.querySelector("#toble_data tbody");
+
+        // مسح البيانات الموجودة في tbody باستثناء الصف الأول
+        tableBody.innerHTML = "";
+
+        // إضافة الصفوف الجديدة من tabledata
+        for (const data of tabledata) {
+          tableBody.innerHTML += `
+                <tr>
+                  
+                  <td>
+                    <img
+                      src="${data.imag}"
+                      alt=""
+                      height="70px"
+                    />
+                  </td>
+                  <td>${data.price}</td>
+                   <td>
+                    <div class="number-Quantity">
+                      <span class="value" id="counter" style="margin-top: 10px">${data.Quantity}</span>
+                    </div>
+                  </td>
+                
+                </tr>
+              `;
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login and Navbar</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+      }
+
+      .nav {
+        display: flex;
+        align-items: center;
+        background-color: #002147;
+        padding: 15px;
+        font-size: 20px;
+      }
+
+      .nav a {
+        color: white;
+        text-decoration: none;
+        margin-right: 20px;
+      }
+
+      .nav .logo img {
+        height: 40px;
+        margin-right: 20px;
+      }
+
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+      #category-select {
+        background-color: #002147;
+        color: white;
+        border: none;
+        padding: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        margin-right: 20px;
+      }
+
+      #category-select option {
+        color: black;
+      }
+
+      #category-select:hover {
+        text-decoration: none;
+      }
+
+      .nav-right {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+      }
+
+      .nav-right .user-info {
+        display: none;
+        color: white;
+        margin-right: 20px;
+      }
+
+      .nav-right .logout-btn {
+        display: none;
+        background-color: #f44336;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+
+      .nav-right .logout-btn:hover {
+        background-color: #d32f2f;
+      }
+
+      .login-form {
+        position: absolute;
+        right: 50%;
+        bottom: 30%;
+        transform: translate(50%, 50%);
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        display: none;
+      }
+
+      .login-form h2 {
+        margin-bottom: 15px;
+        font-size: 24px;
+        color: #333;
+      }
+
+      .login-form label {
+        margin-bottom: 5px;
+        display: block;
+        color: #555;
+      }
+
+      .login-form input[type="email"],
+      .login-form input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      .login-form .error {
+        color: red;
+        margin-bottom: 15px;
+      }
+
+      .login-form button {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="nav">
+        <a href="HomeEdit.html">Home</a>
+        <div class="dropdown">
+          <select id="category-select" onchange="location = this.value;">
+            <option value="#" style="background-color: #002147; color: white">
+              Category
+            </option>
+            <option
+              value="men.html"
+              style="background-color: #002147; color: white"
+            >
+              Men
+            </option>
+            <option
+              value="women.html"
+              style="background-color: #002147; color: white"
+            >
+              Women
+            </option>
+            <option
+              value="children.html"
+              style="background-color: #002147; color: white"
+            >
+              Children
+            </option>
+          </select>
+        </div>
+        <a href="AboutEdit.html">About us</a>
+        <a href="contactEdit.html">Contact us</a>
+        <a
+          href="Shopping Cart.html"
+          style="margin-top: 10px; margin-left: 500px"
+        >
+          <img class="A1img" src="Capture.PNG" width="80%" />
+        </a>
+
+        <div class="nav-right">
+          <div class="user-info" id="user-info"></div>
+          <button class="logout-btn" id="logout-btn">Logout</button>
+          <a href="loginEdit.html" id="login-link">Login & Register</a>
+        </div>
+      </div>
+    </header>
+
+    <div
+      class="login-form"
+      id="login-form"
+      style="padding: 35px; margin-bottom: 15px; display: block"
+    >
+      <h2>Login</h2>
+      <form id="loginForm">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="emaillogin"
+          name="email"
+          placeholder="Your email address"
+          required
+          style="width: 90%"
+        />
+
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="passwordlogin"
+          name="password"
+          placeholder="Your password"
+          required
+          style="width: 90%"
+        />
+
+        <div id="error" class="error"></div>
+
+        <button type="submit" style="margin-bottom: 20px; width: 100%">
+          Login
+        </button>
+        <br />
+        <button type="submit" style="width: 100%">
+          <a
+            href="createaccount.html"
+            style="text-decoration: none; margin-top: 35px; color: white"
+            >create account</a
+          >
+        </button>
+      </form>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Setup UI when the DOM content is loaded
+        setupUI();
+
+        // Get the login link element
+        // const loginLink = document.getElementById("login-link");
+
+        // Show login form when login link is clicked
+        /* loginLink.addEventListener("click", function (event) {
+          event.preventDefault();
+          document.getElementById("login-form").style.display = "block";
+        });*/
+
+        // Get the login form element
+        const loginForm = document.getElementById("loginForm");
+
+        // Add an event listener to the login form to handle form submission
+        loginForm.addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          // Get the login email and password input values
+          const loginEmail = document.getElementById("emaillogin").value;
+          const loginPassword = document.getElementById("passwordlogin").value;
+
+          // Retrieve users from local storage or initialize an empty array if not found
+          let users = JSON.parse(localStorage.getItem("users")) || [];
+          // Find the user with the provided email and password
+          const user = users.find(
+            (user) =>
+              user.email === loginEmail && user.password === loginPassword
+          );
+
+          // Predefined credentials
+          const x = "Admin@gmail.com";
+          const y = "Aa@12345";
+
+          // Redirect based on the login credentials
+          if (loginEmail === x && loginPassword === y) {
+            window.open("admin.html");
+          } else if (user) {
+            // Save user to local storage
+            localStorage.setItem("currentUser", JSON.stringify(user));
+            // Update UI
+            window.open("HomeEdit.html");
+            setupUI();
+            // Optionally, redirect to another page
+          } else {
+            alert("Invalid email or password!");
+          }
+
+          // Clear the login input fields after login attempt
+          document.getElementById("emaillogin").value = "";
+          document.getElementById("passwordlogin").value = "";
+          document.getElementById("login-form").style.display = "none";
+        });
+
+        // Logout button functionality
+        const logoutBtn = document.getElementById("logout-btn");
+        logoutBtn.addEventListener("click", function () {
+          localStorage.removeItem("currentUser");
+          setupUI();
+        });
+      });
+
+      // Function to setup the UI based on the user's login status
+      function setupUI() {
+        // Get the current user from local storage
+        const user = getCurrentUser();
+
+        // Get UI elements
+        const userInfo = document.getElementById("user-info");
+        const loginLink = document.getElementById("login-link");
+        const logoutBtn = document.getElementById("logout-btn");
+
+        if (user == null) {
+          // If guest, hide user info and logout button, show login link
+          userInfo.style.display = "none";
+          logoutBtn.style.display = "none";
+          loginLink.style.display = "block";
+        } else {
+          // If logged in, show user info and logout button, hide login link
+          userInfo.innerHTML = `Welcome, ${user.name}`;
+          userInfo.style.display = "block";
+          logoutBtn.style.display = "block";
+          loginLink.style.display = "none";
+        }
+      }
+
+      // Function to get the current user from local storage
+      function getCurrentUser() {
+        let user = null;
+        // Retrieve the user data from local storage
+        const storageUser = localStorage.getItem("currentUser");
+        if (storageUser != null) {
+          user = JSON.parse(storageUser);
+        }
+        return user;
+      }
+    </script>
+  </body>
+</html>

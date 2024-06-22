@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="styleEdit.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+
+<style>
+    /* *{
+        width: 100%;
+    } */
+    .image-list {
+      max-width: 100%; /* Adjust as needed */
+      overflow-x: hidden; /* Prevent horizontal scroll */
+      display: flex;
+      flex-wrap: nowrap; /* Ensure images stay in a single row */
+  }
+  
+  .image-item {
+      flex: 0 0 auto; /* Prevent items from growing or shrinking */
+      width: 100%; /* Make images responsive */
+      height: auto;
+      object-fit: cover; /* Ensure images fill their containers */
+  }
+  
+    .categoryoption{
+        color: white;
+        font-weight: bold;
+        background-color: #002147;
+        font-size: 25px;
+        position: relative;
+        left: 45px;
+        border: none;
+    }
+
+  .scroll-to-top {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #002147;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 50%;
+    padding: 10px 15px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  .scroll-to-top:hover {
+    background-color: #0056b3;
+  }
+
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    background-color: #002147;
+    padding: 15px;
+    font-size: 20px;
+  }
+
+  .nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+  }
+
+ 
+  .nav .logo img {
+    height: 40px;
+    margin-right: 20px;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  #category-select {
+    background-color: #002147;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+
+  #category-select option {
+    color: black;
+  }
+
+  #category-select:hover {
+    text-decoration: none;
+  }
+
+  .nav-right {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-right .user-info {
+    display: none;
+    color: white;
+    margin-right: 20px;
+  }
+
+  .nav-right .logout-btn {
+    display: none;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .nav-right .logout-btn:hover {
+    background-color: #d32f2f;
+  }
+
+
+</style>
+<body  >
+
+  <header>
+    <div class="nav">
+      <a href="HomeEdit.html">Home</a>
+      <div class="dropdown">
+        <select id="category-select" onchange="location = this.value;">
+          <option value="#"  style="background-color: #002147; color: white">
+            Category
+          </option>
+          <option value="men.html"  style="background-color: #002147; color: white">
+            Men
+          </option>
+          <option value="women.html"  style="background-color: #002147; color: white">
+            Women
+          </option>
+          <option value="children.html" style="background-color: #002147; color: white">
+            Children
+          </option>
+        </select>
+      </div>
+      <a href="AboutEdit.html">About us</a>
+      <a href="contactEdit.html">Contact us</a>
+      <a
+        href="Shopping Cart.html"
+        style="margin-top: 10px; margin-left: 500px"
+      >
+        <img class="A1img" src="Capture.PNG" width="80%" />
+      </a>
+
+      <div class="nav-right">
+        <div class="user-info" id="user-info"></div>
+        <button class="logout-btn" id="logout-btn">Logout</button>
+        <a href="loginEdit.html" id="login-link">Login & Register</a>
+      </div>
+    </div>
+  </header>
+   
+
+        
+    <div class="container" >
+        <div class="slider-wrapper">
+          <button id="prev-slide" class="slide-button material-symbols-rounded">
+            chevron_left
+          </button>
+          <ul class="image-list">
+            <img class="image-item" src="image/img1.webp" alt="img-1" />
+            <img class="image-item" src="image/img2.jpeg" alt="img-2" />
+            <img class="image-item" src="image/img3.webp" alt="img-3" />
+            <img class="image-item" src="image/img4.jpeg" alt="img-4" />
+            <img class="image-item" src="image/img5.webp" alt="img-5" />
+            <img class="image-item" src="image/img6.webp" alt="img-6" />
+            <img class="image-item" src="image/img7.jpeg" alt="img-7" />
+            <img class="image-item" src="image/img8.webp" alt="img-8" />
+            <img class="image-item" src="image/img9.webp" alt="img-9" />
+            <img class="image-item" src="image/img10.jpeg" alt="img-10" />
+            <img class="image-item" src="image/img11.webp" alt="img-11" />
+            <img class="image-item" src="image/img12.jpeg" alt="img-12" />
+            <img class="image-item" src="image/img13.jpeg" alt="img-13" />
+            <img class="image-item" src="image/img14.webp" alt="img-14" />
+            <img class="image-item" src="image/img15.webp" alt="img-15" />
+            <img class="image-item" src="image/img16.webp" alt="img-16" />
+            <img class="image-item" src="image/img17.jpeg" alt="img-17" />
+            <img class="image-item" src="image/img18.webp" alt="img-18" />
+            <img class="image-item" src="image/img19.webp" alt="img-19" />
+            <img class="image-item" src="image/img20.jpeg" alt="img-20" />
+            <img class="image-item" src="image/img21.jpeg" alt="img-21" />
+            <img class="image-item" src="image/img22.webp" alt="img-22" />
+            <img class="image-item" src="image/img23.jpeg" alt="img-23" />
+            <img class="image-item" src="image/img24.jpg" alt="img-24" />
+            <img class="image-item" src="image/img25.jpg" alt="img-25" />
+            <img class="image-item" src="image/img26.jpg" alt="img-26" />
+            <img class="image-item" src="image/img27.jpg" alt="img-27" />
+            <img class="image-item" src="image/img28.jpg" alt="img-28" />
+            <img class="image-item" src="image/img29.jpg" alt="img-29" />
+         
+          <button id="next-slide" class="slide-button material-symbols-rounded">
+            chevron_right
+          </button>
+        </div>
+        <div class="slider-scrollbar">
+          <div class="scrollbar-track">
+            <div class="scrollbar-thumb"></div>
+          </div>
+        </div>
+      </div>
+
+
+
+    </header>
+
+
+
+
+    
+    <br><br><br>
+    <footer >
+      
+
+        
+       <div style="width: 70%;
+       height: 200px;
+       border-radius: 10px;
+       color:white;
+       display: flex;
+       justify-content: space-between;
+       align-items: flex-start; 
+       padding: 20px;
+       margin: 20px;
+       flex-wrap: wrap;
+       gap: 5px;">
+            <div>
+                <h2 class="follow">FOLLOW US <br></h2>
+            <!-- <h2 class="open">WORK HOURS</h2> -->
+            <a href="https://www.facebook.com/?locale=ar_AR" target="_blank"><img src="image/Facebook-icon.png"  width="40px" height="50px"></a>
+            <a href="https://twitter.com/i/flow/login" target="_blank"><img src="image/twitter.png"  width="30px" height="50px"></a>
+            <a href="https://www.linkedin.com/feed/" target="_blank"><img src="image/linkedin.png"  width="30px" height="50px"></a>
+            </div>
+<!-- <h3 class="h4open">We work online and are available at <br> your services at all times of the day</h3> -->
+<div style="position: relative; left: 280px; top: 20px; font-weight: bold;">
+  <h1>CALL US</h1>
+ <a style="position: relative; top: 10px; left: 5px; " href="tel:+201559100727"> <img width="70px " src="telephone_724664.png" alt="No Photo">  </a>
+ <a style="position: relative; top: 12px;" href="https://wa.me/+201559100727" target="_blank"> <img src="icons8-whatsapp-64.png"> </a>
+
+
+</div>
+            <div style=" width: 350px; height: 200px; border: 1px ; margin-left: 100px;">
+                <h3 style="position: relative; top: 20px; left: 380px; " >We work online and are available at your services at all times of the day</h3>
+                <br>
+                <h5 style="position: relative; top: 50px;" class="A3foot">Copyrights <mark style="background-color: yellow;">©</mark> are reserved to ITI.</h5>
+            
+            </div>
+
+            <div>
+                <!-- <a style="scroll-behavior: smooth;" class="top" href="#top"> Top </a> -->
+                <button class="scroll-to-top" onclick="scrollToTop()">Go to Top</button>
+
+            </div>
+       </div>
+    </footer>
+    <script>
+        
+
+
+const initSlider = () => {
+    const imageList = document.querySelector(".slider-wrapper .image-list");
+    const slideButtons = document.querySelectorAll(".slider-wrapper .slide-button");
+    const sliderScrollbar = document.querySelector(".container .slider-scrollbar");
+    const scrollbarThumb = sliderScrollbar.querySelector(".scrollbar-thumb");
+    const maxScrollLeft = imageList.scrollWidth - imageList.clientWidth;
+    
+    // Handle scrollbar thumb drag
+    scrollbarThumb.addEventListener("mousedown", (e) => {
+        const startX = e.clientX;
+        const thumbPosition = scrollbarThumb.offsetLeft;
+        const maxThumbPosition = sliderScrollbar.getBoundingClientRect().width - scrollbarThumb.offsetWidth;
+        
+        // Update thumb position on mouse move
+        const handleMouseMove = (e) => {
+            const deltaX = e.clientX - startX;
+            const newThumbPosition = thumbPosition + deltaX;
+
+            // Ensure the scrollbar thumb stays within bounds
+            const boundedPosition = Math.max(0, Math.min(maxThumbPosition, newThumbPosition));
+            const scrollPosition = (boundedPosition / maxThumbPosition) * maxScrollLeft;
+            
+            scrollbarThumb.style.left = `${boundedPosition}px`;
+            imageList.scrollLeft = scrollPosition;
+        }
+
+        // Remove event listeners on mouse up
+        const handleMouseUp = () => {
+            document.removeEventListener("mousemove", handleMouseMove);
+            document.removeEventListener("mouseup", handleMouseUp);
+        }
+
+        // Add event listeners for drag interaction
+        document.addEventListener("mousemove", handleMouseMove);
+        document.addEventListener("mouseup", handleMouseUp);
+    });
+
+    // Slide images according to the slide button clicks
+    slideButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            const direction = button.id === "prev-slide" ? -1 : 1;
+            const scrollAmount = imageList.clientWidth * direction;
+            imageList.scrollBy({ left: scrollAmount, behavior: "smooth" });
+        });
+    });
+
+     // Show or hide slide buttons based on scroll position
+    const handleSlideButtons = () => {
+        slideButtons[0].style.display = imageList.scrollLeft <= 0 ? "none" : "flex";
+        slideButtons[1].style.display = imageList.scrollLeft >= maxScrollLeft ? "none" : "flex";
+    }
+
+    // Update scrollbar thumb position based on image scroll
+    const updateScrollThumbPosition = () => {
+        const scrollPosition = imageList.scrollLeft;
+        const thumbPosition = (scrollPosition / maxScrollLeft) * (sliderScrollbar.clientWidth - scrollbarThumb.offsetWidth);
+        scrollbarThumb.style.left = `${thumbPosition}px`;
+    }
+
+    // Call these two functions when image list scrolls
+    imageList.addEventListener("scroll", () => {
+        updateScrollThumbPosition();
+        handleSlideButtons();
+    });
+}
+
+window.addEventListener("resize", initSlider);
+window.addEventListener("load", initSlider);
+//to go part of product
+
+///////////////////////////////////////////////////////
+
+
+// Function to scroll to the top of the page smoothly
+function scrollToTop() {
+  // Scroll to top logic
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////
+setupUI();
+
+function setupUI() {
+    // Get user token from local storage
+    const token = localStorage.getItem("currentUser");
+
+    // Get login and logout elements
+    const loginBtn = document.getElementById("login-link");
+    const logoutBtn = document.getElementById("logout-btn");
+    const userInfo = document.getElementById("user-info");
+
+    // Check if user is logged in
+    if (token == null) {
+        // Show login and register buttons
+        loginBtn.style.display = "flex";
+        logoutBtn.style.display = "none";
+        userInfo.style.display = "none"; // Hide user info if not logged in
+    } else {
+        // Hide login and register buttons
+        loginBtn.style.display = "none";
+        logoutBtn.style.display = "flex";
+        userInfo.style.display = "flex"; // Show user info if logged in
+
+        // Get current user and display user info
+        const user = getCurrentUser();
+        if (user) {
+            userInfo.innerHTML = `${user.name}`;
+        }
+    }
+}
+
+// Function to get current user from local storage
+
+function getCurrentUser() {
+  let user = null;
+  // Retrieve the user data from local storage
+  const storageUser = localStorage.getItem("currentUser");
+  if (storageUser != null) {
+    user = JSON.parse(storageUser);
+  }
+  return user;
+}
+
+// Logout function
+const logoutBtn = document.getElementById("logout-btn");
+logoutBtn.addEventListener("click", function () {
+  localStorage.removeItem("currentUser");
+  setupUI();
+});
+
+
+function openWhatsApp() {
+  // Replace with your WhatsApp number and message
+  var phoneNumber = '01559100727';  // Replace with your WhatsApp number
+  var message = 'Hello!';  // Optional: Replace with your default message
+
+  // Create WhatsApp URL
+  var url = 'https://wa.me/' + phoneNumber + '?text=' + encodeURIComponent(message);
+
+  // Open WhatsApp in a new tab
+  window.open(url, '_blank');
+}
+    </script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="img.js"></script>
+
+</body>
+</html>
